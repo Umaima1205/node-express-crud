@@ -8,6 +8,7 @@ app.use(express.json());
 //db url
 const DbUrl = "mongodb+srv://umaimayousuf1205:icL7bHw9wBM5w4qV@cluster0.vkla3pl.mongodb.net/?retryWrites=true&w=majority";
 
+const port = 3000;
 
 //db connected
 mongoose
@@ -41,6 +42,6 @@ app.post('/' , async(req , res) => {
 
 
 //listening to port
-app.listen(8000, () => {
-    console.log(`Server is listening on ${8000}`);
+app.listen(port, () => {
+    console.log(`Server is listening on ${port}`);
 });
